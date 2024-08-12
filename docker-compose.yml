@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ng-house-listing:
+    build: .
+    container_name: ng-house-listing
+    volumes:
+      - .:/app
+    ports:
+      - "4201:4200"
+      - "3000:3000"
+    stdin_open: true
+    tty: true
